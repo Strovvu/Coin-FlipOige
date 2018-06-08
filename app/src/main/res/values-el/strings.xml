@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Κορώνα ή Γράμματα</string>
+    <string name="currentScore">Current Score</string>
+    <string name="HighScore">High Score</string>
+    <string name="Welcome">Καλωσόρισες!</string>
+    <string name="heads">Heads</string>
+    <string name="tails">Tails</string>
+    <string name="headsCharacter">H</string>
+    <string name="tailsCharacter">T</string>
+    <string name="tapToPredict">Πάτα για πρόβλεψη</string>
+    <string name="youPredictedHeads">Πρόβλεψες Κορώνα</string>
+    <string name="youPredictedTails">Πρόβλεψες Γράμματα</string>
+    <string name="CongratulationsNewHighscore">Συγχαρητήρια έκανες High Score</string>
+    <string name="SlideToRoll">Ολίσθησε</string>
+</resources>

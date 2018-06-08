@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/arrow_slide"
+    android:oneshot="false">
+    <item android:drawable="@drawable/arrow_1" android:duration="200" />
+    <item android:drawable="@drawable/arrow_2" android:duration="200" />
+    <item android:drawable="@drawable/arrow_3" android:duration="200" />
+    <item android:drawable="@drawable/arrow_4" android:duration="200" />
+    <item android:drawable="@drawable/arrow_5" android:duration="200" />
+    <item android:drawable="@drawable/arrow_6" android:duration="200" />
+    <item android:drawable="@drawable/arrow_7" android:duration="200" />
+    <item android:drawable="@drawable/arrow_8" android:duration="200" />
+    <item android:drawable="@drawable/arrow_9" android:duration="200" />
+    <item android:drawable="@drawable/arrow_10" android:duration="200" />
+    <item android:drawable="@drawable/arrow_11" android:duration="200" />
+    <item android:drawable="@drawable/arrow_12" android:duration="200" />
+
+
+
+</animation-list>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">FlipTheCoin</string>
+    <string name="title_my_activity" translatable="false"></string>
+    <string name="currentScore">Current Score</string>
+    <string name="HighScore">High Score</string>
+    <string name="Welcome">Welcome!</string>
+    <string name="heads">Heads</string>
+    <string name="tails">Tails</string>
+    <string name="tapToPredict">Tap to predict</string>
+    <string name="headsCharacter">H</string>
+    <string name="tailsCharacter">T</string>
+    <string name="youPredictedHeads">You predicted Heads</string>
+    <string name="youPredictedTails">You predicted Tails</string>
+    <string name="CongratulationsNewHighscore">Congratulations New Highscore!</string>
+    <string name="SlideToRoll">Slide to roll</string>
+</resources>
