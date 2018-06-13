@@ -9,9 +9,7 @@ import android.widget.ImageView;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
-/**
- *     Main Activity controls the logic of the game.
- */
+
 public class MainActivity extends AppCompatActivity {
 
     private static final String STATE_COUNTER = "counter";
@@ -28,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView prediction,outcome,current,high,sequence;
     private CoinHandler coinHandler;
 
-    /* This function implements all basic functionality on the creation of the app*/
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,20 +39,18 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
-        // Make sure to call the super method so that the states of our views are saved
+
         super.onSaveInstanceState(outState);
-        // Save our own state now
+
         outState.putInt(STATE_COUNTER,mCounter);
     }
 
-    /* This function is used to detect gestures on the screen */
+
     private void onDetectGesture(){
         CustomGestureDetector customGestureDetector = new CustomGestureDetector();
         gestureDetector = new GestureDetector(this, customGestureDetector);
 
-        /* Detect gestures on the arrow icon
-         * Highly important to use an empty image view because onFling is not recognised on animation
-         * with this method */
+
 
         empty = (ImageView) findViewById(R.id.empty_image_view);
         empty.setOnTouchListener(new View.OnTouchListener() {
@@ -67,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    /* The internal class used to detect gestures */
+
     class CustomGestureDetector  extends GestureDetector.SimpleOnGestureListener {
 
         @Override
@@ -84,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    /* This function implements all function after the user interface is loaded */
+
     @Override
     protected void onStart(){
         super.onStart();
@@ -96,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
         super.onPause();
     }
 
-    /* This function initialises process*/
+
     private void init(){
 
         empty = findViewById(R.id.empty_image_view);
@@ -117,7 +113,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    /* This function starts process*/
+
     private void start(int predict){
 
         outcome.setText(null);
@@ -129,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    /* This function sets selected prediction */
+
     public void selectHeads (View view){
         start(0);
 

@@ -5,9 +5,7 @@ import android.graphics.drawable.AnimationDrawable;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-/**
- *  This class Handles the Arrow animation.
- */
+
 
 class ArrowHandler {
 
@@ -22,7 +20,7 @@ class ArrowHandler {
         this.resources = resources;
     }
 
-    /* This function is used to create the moving arrow to indicate swipe movement */
+
     void animateArrow(){
 
         slide.setText(resources.getString(R.string.SlideToRoll));
@@ -32,7 +30,7 @@ class ArrowHandler {
         arrow.start();
     }
 
-    /* This function is used to stop the moving arrow */
+
     void stopArrow(){
 
         arrow.stop();

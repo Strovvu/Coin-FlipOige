@@ -13,11 +13,6 @@ import android.widget.Toast;
 
 import java.util.Random;
 
-/**
- *          This class Handles the Coin animation and updates the attributes
- *                   and views so the game works properly.
- *
- */
 
 class CoinHandler {
 
@@ -64,7 +59,7 @@ class CoinHandler {
     }
 
 
-    /* This function is used to create the rolling coin */
+
     void rollCoin(){
 
         view.setImageDrawable(null);
@@ -73,14 +68,14 @@ class CoinHandler {
         coin.start();
     }
 
-    /* This function is used to stop the rolling coin */
+
     private void stopCoin(){
 
         coin.stop();
         view.setBackgroundDrawable(null);
     }
 
-    /* This function is used to simulate a rolling coin moving in the air*/
+
     void flipCoin(){
 
         TranslateAnimation flip = new TranslateAnimation(0,0,0,-100);
@@ -114,7 +109,7 @@ class CoinHandler {
 
     }
 
-    /* This function is used to set the value of the coin*/
+
     private void setCoin(){
 
         stopCoin();
@@ -133,7 +128,7 @@ class CoinHandler {
 
     }
 
-    /* This function is used to set the user's prediction*/
+
     void setPrediction(int p){
 
         predict = p;
@@ -148,7 +143,7 @@ class CoinHandler {
 
     }
 
-    /* This function is used to set the outcome of the prediction */
+
     private void setOutcome(){
 
         if(predict == side){
@@ -186,12 +181,12 @@ class CoinHandler {
         }
     }
 
-    /* This function is used to disable some function while the coin animates */
+
     public boolean getAllowance(){
         return allow;
     }
 
-    /*This function is used for saving the passes the HighScore in the MainActivity*/
+
     public String getHighScore(){
         return String.valueOf(highScore);
     }
